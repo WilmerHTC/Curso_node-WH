@@ -9,7 +9,7 @@ const dbConnect = require('./config/mongo');
 const app = express();
 app.use(cors()); //MI app hace uso de libreria cors
 app.use(express.json());
-app.use(express.static("storage"))
+app.use(express.static("storage"));
 
 const port = process.env.PORT || 3000;
 
